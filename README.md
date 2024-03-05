@@ -13,4 +13,4 @@ Limitations:
 - Time between leaving the reading room and the next attempt to enter: 2-5 seconds
 
 Execution:
-- The program is executed by running the Main.java class with 2 possible parameters (1. the number of writers, 2. readers provided after a space). By default, without parameters, these values are 3 writers and 10 readers.
+- The program is executed by running the Main.java class with 2 possible parameters (1. one being the number of writers and the 2. one being readers provided after a space). By default, without parameters, these values are 3 writers and 10 readers.
