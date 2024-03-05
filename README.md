@@ -1,14 +1,16 @@
-Poniższy program jest rozwiązaniem problemu pisarzy i czytelników. Dąrzyłam do znalezienia rozwiązania, które nie daje pierwszeństwa ani pisarzom, ani czytelnikom i dąrzy do zachowania balansu. Pomysł zaczerpnęłam z artykułu:
+# Writers and Readers Problem Solution
 
-https://arxiv.org/ftp/arxiv/papers/1309/1309.4507.pdf
+This program is a solution to the writers and readers problem. I aimed to find a solution that does not prioritize either writers or readers and seeks to maintain balance. The idea was inspired by the article:
 
-Jest on następujący: czytelnicy wchodzą do czytelni do momentu, gdy jakikolwiek pisarz nie wyśle komunikatu, że sam chciałby dołączyć. Od tej pory żaden nowy czytelnik nie jest wpuszczany. Ostatni czytelnik opuszczający czytelnię wysyła sygnał do pisarza, że może on dołączyć.
+[Link to the article](https://arxiv.org/ftp/arxiv/papers/1309/1309.4507.pdf)
 
-Szczegółowe omówienie działania programu i metod zostało umieszczone w dokumentacji klas w folderze JavaDoc.
+It works as follows: readers enter the reading room until any writer sends a message that they would like to join. From that moment on, no new reader is allowed in. The last reader leaving the reading room sends a signal to the writer that they can join.
 
-Ograniczenia:
-- czas czytania/pisania: 1-3 sekundy;
-- czas między wyjściem z czytelni a kolejną próbą wejścia: 2-5 sekund
+Detailed discussion of the program's operation and methods is provided in the class documentation in the JavaDoc folder.
 
-Uruchomienie:
-- program uruchamia się poprzez uruchomienie klasy Main.java z 2 możliwymi parametrami (1. to ilość pisarzy, 2. czytelników podawane po spacji). Domyślnie, bez podania parametrów te wartości to 3 pisarzy i 10 czytelników.
+Limitations:
+- Reading/Writing time: 1-3 seconds
+- Time between leaving the reading room and the next attempt to enter: 2-5 seconds
+
+Execution:
+- The program is executed by running the Main.java class with 2 possible parameters (1. the number of writers, 2. readers provided after a space). By default, without parameters, these values are 3 writers and 10 readers.
